@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Schedule</title>
+
+    <link rel="stylesheet" href="../CSSs/viewDetails.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- LANGUAGE LIST -->
+      <ul id="langList">
+        <li onclick="showExams('Spanish')">Spanish</li>
+        <li onclick="showExams('German')">German</li>
+        <li onclick="showExams('Arabic')">Arabic</li>
+        <li onclick="showExams('French')">French</li>
+        <li onclick="showExams('Portuguese')">Portuguese</li>
+      </ul>
+
+      <!-- EXAM LIST -->
+      <div id="examList" class="hidden">
+        <p>📅 12 March - Midterm Exam</p>
+        <p>📅 20 April - Speaking Test</p>
+        <p>📅 5 June - Final Exam</p>
+      </div>
+    </div>
+
+    <script src="../JSs/viewDetails.js"></script>
+  </body>
+</html>

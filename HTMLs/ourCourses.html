@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="../CSSs/ourCourses.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- LANGUAGE LIST -->
+      <ul class="lang-list" id="langList">
+        <li onclick="showLevels('Spanish')">Spanish</li>
+        <li onclick="showLevels('German')">German</li>
+        <li onclick="showLevels('Arabic')">Arabic</li>
+        <li onclick="showLevels('French')">French</li>
+        <li onclick="showLevels('Portuguese')">Portuguese</li>
+      </ul>
+
+      <!-- LEVEL LIST -->
+      <ul class="level-list" id="levelList">
+        <li onclick="goRegister()">A1</li>
+        <li onclick="goRegister()">A2</li>
+        <li onclick="goRegister()">B1</li>
+        <li onclick="goRegister()">B2</li>
+        <li onclick="goRegister()">C1</li>
+        <li onclick="goRegister()">C2</li>
+      </ul>
+    </div>
+
+    <script src="../JSs/ourCourses.js"></script>
+  </body>
+</html>

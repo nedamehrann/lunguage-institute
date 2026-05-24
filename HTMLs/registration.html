@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="../CSSs/registration.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>Student Registration</h1>
+
+      <form id="regForm">
+        <input type="text" placeholder="First Name" required />
+
+        <input type="text" placeholder="Last Name" required />
+
+        <input type="number" placeholder="Age" required />
+
+        <select required>
+          <option value="">Select Language</option>
+          <option>English</option>
+          <option>German</option>
+          <option>French</option>
+          <option>Turkish</option>
+          <option>Arabic</option>
+        </select>
+
+        <textarea
+          placeholder="Write more about your language level (optional)"
+        ></textarea>
+
+        <button type="submit">Send Information</button>
+      </form>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2>Success 🎉</h2>
+        <p>Your information has been successfully submitted.</p>
+      </div>
+    </div>
+
+    <script src="../JSs/registration.js"></script>
+  </body>
+</html>

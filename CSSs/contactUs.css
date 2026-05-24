@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+
+  /* Animated gradient background */
+  background: linear-gradient(120deg, #87ceeb, #ffffff, #001f3f);
+  background-size: 300% 300%;
+  animation: bg 8s infinite;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* LIST */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 12px 0;
+}
+
+.contact-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.contact-list a:hover {
+  background: white;
+  color: #001f3f;
+}
+
+/* ICON SIZE */
+.contact-list i {
+  font-size: 20px;
+}
