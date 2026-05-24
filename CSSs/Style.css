@@ -177,7 +177,6 @@ header {
   }
 
   .menu {
-    flex-wrap: wrap;
     gap: 10px;
   }
 
@@ -187,5 +186,9 @@ header {
 
   .info-box{
     padding: 8px;
+  }
+
+  .info-section{
+    padding: 40px 8px;
   }
 }
