@@ -71,7 +71,7 @@ header {
 .info-box {
   height: 700px;
   padding: 20px;
-  color: white;
+  color: #ccc;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
@@ -179,5 +179,13 @@ header {
   .menu {
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .header{
+    font-size: 14px;
+  }
+
+  .info-box{
+    padding: 8px;
   }
 }
