@@ -10,17 +10,26 @@ body {
 
 /* HEADER */
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+  overflow: hidden;
   background: linear-gradient(90deg, #87ceeb, #001f3f);
   color: white;
 }
 
 .menu {
   display: flex;
-  gap: 20px;
+     align-items: center;
+  gap: 10px;
+     overflow-x: auto;
+     overflow-y: hidden;
+     white-space: nowrap;
+     scroll-behavior: smooth;
+     padding-bottom: 5px;
+     max-width: 70%;
   list-style: none;
 }
 
@@ -29,10 +38,30 @@ header {
   transition: 0.3s;
   color: #fff;
   text-decoration: none;
+  flex-shrink: 0;
+  transition: 0.3s;
 }
 
 .menu a:hover {
   opacity: 0.7;
+}
+
+.menu::-webkit-scrollbar{
+  height: 6px;
+}
+
+.menu::-webkit-scrollbar-track{
+  background: #222;
+  border-radius: 20px;
+}
+
+.menu::-webkit-scrollbar-thumb{
+  background: #666;
+  border-radius: 20px;
+}
+
+.menu::-webkit-scrollbar-thumb:hover{
+  background: #999;
 }
 
 /* HERO */
@@ -172,17 +201,13 @@ header {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .info-section {
-    flex-direction: column;
+   .menu {
+   gap: 20px;
   }
 
-  .menu {
-    /* flex-wrap: wrap; */
-    gap: 10px;
-  }
-
-  .header{
-    font-size: 6px;
+  header{
+    font-size: 8px;
+    padding: 0 15px;
   }
 
   .info-box{
