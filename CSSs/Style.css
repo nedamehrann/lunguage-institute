@@ -177,12 +177,12 @@ header {
   }
 
   .menu {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10px;
   }
 
   .header{
-    font-size: 10px;
+    font-size: 6px;
   }
 
   .info-box{
